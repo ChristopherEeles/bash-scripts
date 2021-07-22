@@ -19,7 +19,7 @@ sudo add-apt-repository \
 apt_pkgs=(
     # system deps
     'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essentials'
-    'libsodium-dev'
+    'libsodium-dev' 'libopenblas-dev'
     # databases
     'sqlite' 'mysql-server' 'mariabd-server-10.3' 'mariadb-server' 
     'libmariadbclient-dev'
@@ -28,6 +28,8 @@ apt_pkgs=(
     # programming languages
     'r-base' 'node-typescript' 
 )
+
+echo "export LD_LIBRARY_PATH=/usr/lib/openblas-base/" >> ~/.bashrc
 
 for pkg in "${apt_pkgs[@]}"
 do
