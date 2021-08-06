@@ -12,3 +12,6 @@ echo >> ~/.bashrc # add a newline
 echo 'export PATH=$PATH:'"$(pwd)" >> ~/.bashrc
 # shellcheck disable=SC1091
 source ~/.bashrc
+
+sudo apt update
+sudo apt install libsecret-1-0
