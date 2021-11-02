@@ -18,7 +18,7 @@ sudo add-apt-repository \
 # -- Install apt useful packages
 apt_pkgs=(
     # system deps
-    'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essentials'
+    'libcurl4-openssl-dev' 'libssl-dev' 'libxml2-dev' 'build-essential'
     'libsodium-dev' 'libopenblas-dev'
     # databases
     'sqlite' 'mysql-server' 'mariabd-server-10.3' 'mariadb-server' 
